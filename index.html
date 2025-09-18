@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+
+</head>
+
+<body>
+
+  <section class="about" style="background-color: black;">
+    <div class="intro-container">
+
+      <img
+        src="java.png"
+        class="floating-skill float-java" alt="Java Icon">
+      <img
+        src="c.png"
+        class="floating-skill float-c" alt="C Icon">
+      <img
+        src="html.png"
+        class="floating-skill float-html" alt="HTML Icon">
+      <img
+        src="css.jpeg"
+        class="floating-skill float-css" alt="CSS Icon">
+      <img
+        src="python.png"
+        class="floating-skill float-python" alt="Python Icon">
+      <img
+        src="javascript.png"
+        class="floating-skill float-js" alt="JavaScript Icon">
+
+         
+      <div class="intro-text">
+        <h1>Rali Mahi</h1>
+        <h2>Full Stack Developer | React Enthusiast</h2>
+        <p>Welcome to my portfolio. I build full-stack applications using modern technologies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skills-row">
+        <div class="skill-card react">
+          <h3>C Language</h3>
+          <p>Building dynamic applications.</p>
+        </div>
+        <div class="skill-card node">
+          <h3>Java</h3>
+          <p>Backend development and databases.</p>
+        </div>
+        <div class="skill-card fullstack">
+          <h3>Python</h3>
+          <p>Full stack development with cloud deployment.</p>
+        </div>
+      </div>
+      <div class="skills-row">
+        <div class="skill-card html">
+          <h3>HTML/CSS</h3>
+          <p>Responsive web design and animations.</p>
+        </div>
+        <div class="skill-card js">
+          <h3>JavaScript</h3>
+          <p>ES6+, DOM manipulation, async programming.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects scroll-animate">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <img src="indivistaimage.jpg" class="project-img">
+      <h3>INDIVISTA</h3>
+      <div class="underline"></div>
+      <p>Indivista is a travel platform that helps users explore and plan trips across India, offering guides, itineraries, and recommendations for a seamless travel experience.</p>
+      <a href="https://lohithaalekhyakollu.github.io/Indivista/">View Project</a>
+    </div>
+    <div class="project-card">
+      <img src="budgetbuddy.jpg" class="project-img">
+      <h3>BUDGET BUDDY</h3>
+      <div class="underline"></div>
+      <p>Budget Buddy is a smart finance app that helps users track expenses, plan budgets, and manage money efficiently for better financial decisions.</p>
+      <a href="https://spjak231.github.io/iShip-1/">View Project</a>
+    </div>
+  </section>
+
+  <section class="certificates scroll-animate">
+    <h2>Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert-badge">
+        <img src="image.png" class="cert-img">
+        <h3>Python Essentials</h3>
+        <p>Issued by Cisco Academy, 2025</p>
+        <a href="https://www.netacad.com/certificates?issuanceId=340c3d75-3436-43fa-85de-c1e0c1afcb8c">View Certificate</a>
+      </div>
+      <div class="cert-badge">
+        <img src="image.png" class="cert-img">
+        <h3>Os Basis</h3>
+        <p>Issued by Cisco Academy, 2025</p>
+        <a href="#">View Certificate</a>
+      </div>
+      <div class="cert-badge">
+        <img src="image.png" class="cert-img">
+        <h3>css Essentials</h3>
+        <p>Issued by Cisco Academy, 2025</p>
+        <a href="#">View Certificate</a>
+      </div>
+      <div class="cert-badge">
+        <img src="image.png" class="cert-img">
+        <h3>js Essentials</h3>
+        <p>Issued by Cisco Academy, 2025</p>
+        <a href="#">View Certificate</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="contact scroll-animate">
+    <h2>Contact Me</h2>
+    <p>If you want to get in touch, feel free to reach out via email or connect on social media.</p>
+    <p>Email: <a href="mailto:mahirali1320@gmail.com">mahirali@example.com</a></p>
+    <div class="social-links">
+      <a href="https://github.com/mahi63-hub"><i class="fa-brands fa-github fa-2x" style="color: white"></i></a>
+      <a href="https://www.linkedin.com/in/mahi-rali-b5a852334/"><i class="fa-brands fa-linkedin fa-2x" style="color: white;"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter fa-2x" style="color: white;"></i></a>
+    </div>
+  </div>
+
+  <script>
+    let sections = document.querySelectorAll(".scroll-animate");
+    window.addEventListener("scroll", function () {
+      let windowHeight = window.innerHeight;
+      sections.forEach(function (sec) {
+        let top = sec.getBoundingClientRect().top;
+        if (top < windowHeight - 100) {
+          sec.classList.add("show");
+        }
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
