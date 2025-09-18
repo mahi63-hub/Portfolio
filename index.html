@@ -19,13 +19,13 @@
         src="java.png"
         class="floating-skill float-java" alt="Java Icon">
       <img
-        src="photos/c.png"
+        src="c.png"
         class="floating-skill float-c" alt="C Icon">
       <img
         src="html.png"
         class="floating-skill float-html" alt="HTML Icon">
       <img
-        src="photos/css.jpeg"
+        src="css.jpeg"
         class="floating-skill float-css" alt="CSS Icon">
       <img
         src="python.png"
@@ -83,7 +83,7 @@
       <a href="https://lohithaalekhyakollu.github.io/Indivista/">View Project</a>
     </div>
     <div class="project-card">
-      <img src="photos/budgetbuddy.jpg" class="project-img">
+      <img src="budgetbuddy.jpg" class="project-img">
       <h3>BUDGET BUDDY</h3>
       <div class="underline"></div>
       <p>Budget Buddy is a smart finance app that helps users track expenses, plan budgets, and manage money efficiently for better financial decisions.</p>
@@ -95,29 +95,57 @@
     <h2>Certifications</h2>
     <div class="cert-grid">
       <div class="cert-badge">
-        <img src="image.png" class="cert-img">
+        <img src="cisco.png" class="cert-img">
         <h3>Python Essentials</h3>
         <p>Issued by Cisco Academy, 2025</p>
-        <a href="PythonEssentials.pdf" target="_blank">View Certificate</a>
+        <a href="https://www.netacad.com/certificates?issuanceId=340c3d75-3436-43fa-85de-c1e0c1afcb8c">View Certificate</a>
       </div>
       <div class="cert-badge">
-        <img src="image.png" class="cert-img">
+        <img src="cisco.png" class="cert-img">
         <h3>Os Basis</h3>
         <p>Issued by Cisco Academy, 2025</p>
-        <a href="OperatingSystems.pdf" target="_blank">View Certificate</a>
+        <a href="#">View Certificate</a>
       </div>
       <div class="cert-badge">
-        <img src="image.png" class="cert-img">
+        <img src="cisco.png" class="cert-img">
         <h3>css Essentials</h3>
         <p>Issued by Cisco Academy, 2025</p>
-        <a href="cssEssentials.pdf" target="_blank">View Certificate</a>
+        <a href="#">View Certificate</a>
       </div>
       <div class="cert-badge">
-        <img src="image.png" class="cert-img">
+        <img src="cisco.png" class="cert-img">
         <h3>js Essentials</h3>
         <p>Issued by Cisco Academy, 2025</p>
-        <a href="JavaScriptEssentials.pdf" target="_blank">View Certificate</a>
+        <a href="#">View Certificate</a>
       </div>
+    </div>
+  </section>
+
+
+<section class="profiles" id="profiles">
+  <!-- <h2>Coding Profiles</h2> -->
+    <div class="card" data-n="1">
+      <img src="leetcodelogo.png" alt="LeetCode logo" />
+      <h3>LeetCode</h3>
+      <a href="https://leetcode.com/u/Mahi_-_13/" target="_blank" rel="noopener">Open</a>
+    </div>
+
+    <div class="card" data-n="2">
+      <img src="hackerlogo.png" alt="HackerRank logo" />
+      <h3>HackerRank</h3>
+      <a href="https://leetcode.com/u/Mahi_-_13/" target="_blank" rel="noopener">Open</a>
+    </div>
+
+    <div class="card" data-n="3">
+      <img src="codecheflogo.png" alt="CodeChef logo" />
+      <h3>CodeChef</h3>
+      <a href="https://www.codechef.com/users/mahiii_13" target="_blank" rel="noopener">Open</a>
+    </div>
+
+    <div class="card" data-n="4">
+      <img src="codeforceslogo.png" alt="Codeforces logo" />
+      <h3>Codeforces</h3>
+      <a href="https://codeforces.com/profile/Mahi__13" target="_blank" rel="noopener">Open</a>
     </div>
   </section>
 
@@ -143,6 +171,18 @@
         }
       });
     });
+
+    const cards = document.querySelectorAll('.card');
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          // once visible, unobserve
+          io.unobserve(entry.target);
+        }
+      })
+    },{threshold:0.15});
+    cards.forEach(c=> io.observe(c));
 
   </script>
 
